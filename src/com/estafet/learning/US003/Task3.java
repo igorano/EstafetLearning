@@ -22,5 +22,4 @@ public class Task3 {
         System.out.println(capitalC);
         System.out.println(result);
     }
-
 }

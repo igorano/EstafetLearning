@@ -4,6 +4,7 @@ debug.log
 api/target
 ui/target
 common-utils/target
+out
 
 # Binaries
 *.7z
