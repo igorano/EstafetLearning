@@ -1,7 +1,7 @@
 package com.estafet.learning.US003;
 
 public class Task3 {
-    public void task3(){
+    public static void main(String[] args) {
         byte b = 100;
         short s = 10000;
         int i = 100000;
