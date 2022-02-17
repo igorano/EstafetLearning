@@ -1,7 +1,7 @@
 package com.estafet.learning.US002;
 
 public class Task2 {
-    public static void printing() {
+    public static void main(String[] args) {
         byte b = 127;
         System.out.println(b);
 

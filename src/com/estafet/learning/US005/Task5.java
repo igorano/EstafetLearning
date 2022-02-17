@@ -3,6 +3,10 @@ package com.estafet.learning.US005;
 import java.util.Scanner;
 
 public class Task5 {
+    public static void main(String[] args) {
+        checkNumberIsEvenOrOdd();
+        Fibonacii();
+    }
 
     public static void checkNumberIsEvenOrOdd() {
         Scanner reader = new Scanner(System.in);
