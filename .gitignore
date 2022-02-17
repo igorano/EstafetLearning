@@ -1,0 +1,28 @@
+# Default ignored files
+debug.log
+.idea/
+api/target
+ui/target
+common-utils/target
+
+# Binaries
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+*.war
+*.ear
+*.sar
+*.class
+
+# Maven
+target/
+test-output/
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
