@@ -22,5 +22,8 @@ public class Main {
         Task4 task4 = new Task4();
         task4.findPerimeter();
         task4.findSquare();
+        task4.incrementValues();
+        task4.decrementValues();
+        task4.booleanStatementLogicalOperators();
     }
 }
