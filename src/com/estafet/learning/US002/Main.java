@@ -1,6 +1,7 @@
 package com.estafet.learning.US002;
 
 import com.estafet.learning.US003.Task3;
+import com.estafet.learning.US004.Task4;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,5 +19,8 @@ public class Main {
 
         Task3 task3 = new Task3();
         task3.task3();
+        Task4 task4 = new Task4();
+        task4.findPerimeter();
+        task4.findSquare();
     }
 }
