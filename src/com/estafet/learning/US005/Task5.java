@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class Task5 {
     public static void main(String[] args) {
-/*        checkNumberIsEvenOrOdd();
+        /*checkNumberIsEvenOrOdd();
         Fibonacii();
         Factorial();
-        FactorialOfOddNumbers();*/
-        addTwoNumbers();
+        FactorialOfOddNumbers();
+        addTwoNumbers();*/
+        numberOfDaysInMonth();
     }
 
     public static int number;
@@ -98,5 +99,45 @@ public class Task5 {
             System.out.format("Would you like to do this operation again? ");
         }
         while (!reader.next().equals("no"));
+    }
+
+    public static void numberOfDaysInMonth() {
+        Scanner input = new Scanner(System.in);
+
+        int number_Of_DaysInMonth = 0;
+
+        System.out.format("Input a month number between 1 and 12: %n");
+        int month = input.nextInt();
+        if (month < 1 || month > 12) {
+            System.out.format("This is not a valid month.%n");
+        }
+
+        System.out.format("Input a year: ");
+        int year = input.nextInt();
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 12:
+            case 10:
+            case 8:
+            case 7:
+                number_Of_DaysInMonth = 31;
+                break;
+            case 2:
+                if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
+                    number_Of_DaysInMonth = 29;
+                } else {
+                    number_Of_DaysInMonth = 28;
+                }
+                break;
+            case 4:
+            case 6:
+            case 11:
+            case 9:
+                number_Of_DaysInMonth = 30;
+                break;
+        }
+        System.out.format("This month of " + year + " has " + number_Of_DaysInMonth + " days.%n");
     }
 }
