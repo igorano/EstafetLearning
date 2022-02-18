@@ -17,13 +17,13 @@ public class Task5 {
     public static void checkNumberIsEvenOrOdd() {
         Scanner reader = new Scanner(System.in);
 
-        System.out.print("Enter a number to check is it even or odd: ");
+        System.out.format("Enter a number to check is it even or odd: %n");
         int num = reader.nextInt();
 
         if (num % 2 == 0)
-            System.out.println(num + " is even");
+            System.out.format(num + " is even%n");
         else
-            System.out.println(num + " is odd");
+            System.out.format(num + " is odd%n");
     }
 
     public static void Fibonacii() {
@@ -31,9 +31,9 @@ public class Task5 {
         System.out.format("Enter a number to view Fibonacci series: %n");
 
         do {
-            System.out.format("Please enter a positive number!");
+            System.out.format("Please enter a positive number!%n");
             while (!reader.hasNextInt()) {
-                System.out.println("That's not a number!");
+                System.out.format("That's not a number!%n");
                 System.out.format("Enter a number to view Fibonacci series: %n");
                 reader.next();
             }
@@ -53,11 +53,11 @@ public class Task5 {
 
     public static void Factorial() {
         Scanner reader = new Scanner(System.in);
-        System.out.format("Please enter a positive number to view Factorial of it: %n");
+        System.out.format("%nPlease enter a positive number to view Factorial of it: %n");
 
         do {
             while (!reader.hasNextInt()) {
-                System.out.println("That's not a number!");
+                System.out.format("That's not a number!%n");
                 System.out.format("Enter a positive number to view Factorial of it: %n");
                 reader.next();
             }
@@ -68,7 +68,7 @@ public class Task5 {
         for (i = 1; i <= number; i++) {
             fact = fact * i;
         }
-        System.out.println("Factorial of " + number + " is: " + fact);
+        System.out.format("Factorial of " + number + " is: " + fact + "%n");
     }
 
     public static void FactorialOfOddNumbers() {
@@ -81,7 +81,7 @@ public class Task5 {
             for (i = 1; i <= number; i++) {
                 fact = fact * i;
             }
-            System.out.println("Factorial of " + number + " is: " + fact);
+            System.out.format("Factorial of " + number + " is: " + fact + "%n");
         } else {
             System.out.format("Please enter a positive and odd number to view Factorial of it: %n");
         }
