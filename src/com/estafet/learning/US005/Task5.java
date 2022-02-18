@@ -103,7 +103,6 @@ public class Task5 {
 
     public static void numberOfDaysInMonth() {
         Scanner input = new Scanner(System.in);
-
         int number_Of_DaysInMonth = 0;
 
         System.out.format("Input a month number between 1 and 12: %n");
