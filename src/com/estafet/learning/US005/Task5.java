@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Task5 {
     public static void main(String[] args) {
         checkNumberIsEvenOrOdd();
-        Fibonacii();
-        Factorial();
-        FactorialOfOddNumbers();
+        fibonacii();
+        factorial();
+        factorialOfOddNumbers();
         addTwoNumbers();
         numberOfDaysInMonth();
     }
@@ -26,7 +26,7 @@ public class Task5 {
             System.out.format(num + " is odd%n");
     }
 
-    public static void Fibonacii() {
+    public static void fibonacii() {
         Scanner reader = new Scanner(System.in);
         System.out.format("Enter a number to view Fibonacci series: %n");
 
@@ -51,7 +51,7 @@ public class Task5 {
         }
     }
 
-    public static void Factorial() {
+    public static void factorial() {
         Scanner reader = new Scanner(System.in);
         System.out.format("%nPlease enter a positive number to view Factorial of it: %n");
 
@@ -71,7 +71,7 @@ public class Task5 {
         System.out.format("Factorial of " + number + " is: " + fact + "%n");
     }
 
-    public static void FactorialOfOddNumbers() {
+    public static void factorialOfOddNumbers() {
         Scanner reader = new Scanner(System.in);
         System.out.format("Please enter a positive and odd number to view Factorial of it: %n");
         number = reader.nextInt();
