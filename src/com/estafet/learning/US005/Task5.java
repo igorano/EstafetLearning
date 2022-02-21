@@ -64,8 +64,8 @@ public class Task5 {
             number = reader.nextInt();
         } while (number <= 0);
 
-        long i, fact = 1;
-        for (i = 1; i <= number; i++) {
+        long fact = 1;
+        for (int i = 1; i <= number; i++) {
             fact = fact * i;
         }
         System.out.format("Factorial of " + number + " is: " + fact + "%n");
@@ -77,8 +77,8 @@ public class Task5 {
         number = reader.nextInt();
 
         if (number > 0) {
-            long i, fact = 1;
-            for (i = 1; i <= number; i++) {
+            long fact = 1;
+            for (int i = 1; i <= number; i++) {
                 if (i % 2 == 0) {
                     continue;
                 }
