@@ -12,7 +12,7 @@ public class Task5 {
         factorialOfOddNumbers();
     }
 
-    public static int number;
+    private static int number;
 
     public static void checkNumberIsEvenOrOdd() {
         Scanner reader = new Scanner(System.in);
