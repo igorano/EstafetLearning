@@ -40,10 +40,10 @@ public class Task5 {
             number = reader.nextInt();
         } while (number <= 0);
 
-        int n1 = 0, n2 = 1, n3, i;
+        int n1 = 0, n2 = 1, n3;
         System.out.print(n1 + " " + n2);
 
-        for (i = 2; i < number; ++i) {
+        for (int i = 2; i < number; ++i) {
             n3 = n1 + n2;
             System.out.print(" " + n3);
             n1 = n2;
