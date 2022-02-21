@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Task5 {
     public static void main(String[] args) {
-        checkNumberIsEvenOrOdd();
+/*        checkNumberIsEvenOrOdd();
         fibonacii();
         factorial();
         factorialOfOddNumbers();
-        addTwoNumbers();
+        addTwoNumbers();*/
         numberOfDaysInMonth();
     }
 
@@ -40,10 +40,10 @@ public class Task5 {
             number = reader.nextInt();
         } while (number <= 0);
 
-        int n1 = 0, n2 = 1, n3;
+        int n1 = 0, n2 = 1, n3, i;
         System.out.print(n1 + " " + n2);
 
-        for (int i = 2; i < number; ++i) {
+        for (i = 2; i < number; ++i) {
             n3 = n1 + n2;
             System.out.print(" " + n3);
             n1 = n2;
@@ -64,8 +64,8 @@ public class Task5 {
             number = reader.nextInt();
         } while (number <= 0);
 
-        long fact = 1;
-        for (int i = 1; i <= number; i++) {
+        long i, fact = 1;
+        for (i = 1; i <= number; i++) {
             fact = fact * i;
         }
         System.out.format("Factorial of " + number + " is: " + fact + "%n");
@@ -113,15 +113,28 @@ public class Task5 {
 
         System.out.format("Input a year: ");
         int year = input.nextInt();
+
         switch (month) {
             case 1:
+                System.out.format("January has 31 days.%n");
+                break;
             case 3:
+                System.out.format("March has 31 days.%n");
+                break;
             case 5:
+                System.out.format("May has 31 days.%n");
+                break;
             case 12:
+                System.out.format("December has 31 days.%n");
+                break;
             case 10:
+                System.out.format("October has 31 days.%n");
+                break;
             case 8:
+                System.out.format("August has 31 days.%n");
+                break;
             case 7:
-                number_Of_DaysInMonth = 31;
+                System.out.format("July has 31 days.%n");
                 break;
             case 2:
                 if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
@@ -129,12 +142,19 @@ public class Task5 {
                 } else {
                     number_Of_DaysInMonth = 28;
                 }
+                System.out.format("February has " + number_Of_DaysInMonth + " days.%n");
                 break;
             case 4:
+                System.out.format("April has 30 days.%n");
+                break;
             case 6:
+                System.out.format("June has 30 days.%n");
+                break;
             case 11:
+                System.out.format("November has 30 days.%n");
+                break;
             case 9:
-                number_Of_DaysInMonth = 30;
+                System.out.format("September has 30 days.%n");
                 break;
         }
         System.out.format("This month of " + year + " has " + number_Of_DaysInMonth + " days.%n");
