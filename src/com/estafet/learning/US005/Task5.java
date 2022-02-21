@@ -6,10 +6,10 @@ public class Task5 {
     public static void main(String[] args) {
         fibonacii();
         factorial();
-        factorialOfOddNumbers();
         checkNumberIsEvenOrOdd();
         addTwoNumbers();
         numberOfDaysInMonth();
+        factorialOfOddNumbers();
     }
 
     public static int number;
@@ -73,17 +73,20 @@ public class Task5 {
 
     public static void factorialOfOddNumbers() {
         Scanner reader = new Scanner(System.in);
-        System.out.format("Please enter a positive and odd number to view Factorial of it: %n");
+        System.out.format("Please enter a positive number to view Factorial without even numbers in the sequence: %n");
         number = reader.nextInt();
 
-        if (number > 0 && number % 2 != 0) {
+        if (number > 0) {
             long i, fact = 1;
             for (i = 1; i <= number; i++) {
+                if (i % 2 == 0) {
+                    continue;
+                }
                 fact = fact * i;
             }
             System.out.format("Factorial of " + number + " is: " + fact + "%n");
         } else {
-            System.out.format("Please enter a positive and odd number to view Factorial of it: %n");
+            System.out.format("Please enter a positive number to view Factorial of it: %n");
         }
     }
 
