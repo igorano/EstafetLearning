@@ -53,6 +53,7 @@ public class Task6 {
 
     private static void stringArray() {
         String[] stringArr = {"first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"};
+
         System.out.println("\n------------------------");
         System.out.println("Array length is: " + stringArr.length);
         for (int i = 0; i <= 9; i++) {
@@ -70,11 +71,12 @@ public class Task6 {
         intArr[0] = 11;
         intArr[1] = 66;
         intArr[2] = 5;
-        double total = 0;
 
+        double total = 0;
         for (int i : intArr) {
             total = total + i;
         }
+
         System.out.println("\nGet Average of Array:");
         System.out.format("The total is: " + total + "%n");
         double average = total / intArr.length;
@@ -112,25 +114,24 @@ public class Task6 {
             else
                 newArray[i] = arr[i - 1];
         }
-
         return newArray;
     }
 
     private static void addValueInArray(){
         int n = 10;
+        int x = 50;
 
         int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         System.out.println("\n------------------------");
         System.out.println("\nInitial Array:\n" + Arrays.toString(arr));
 
-        int x = 50;
         arr = addElement(n, arr, x, 5);
         System.out.println("\nArray with "+x+" added:\n"+Arrays.toString(arr));
         System.out.println("\n------------------------");
     }
 
     private static void findDuplicateValuesOfArray(){
-        int [] arr = new int [] {5, 1, 2, 3, 4, 2, 7, 8, 8, 3, 5};
+        int[] arr = new int [] {5, 1, 2, 3, 4, 2, 7, 8, 8, 3, 5};
         System.out.println("\n------------------------");
         System.out.println("\nDuplicate elements in the given array: ");
         for(int i = 0; i < arr.length; i++) {
