@@ -12,8 +12,6 @@ public class Task5 {
         factorialOfOddNumbers();
     }
 
-    private static int number;
-
     public static void checkNumberIsEvenOrOdd() {
         Scanner reader = new Scanner(System.in);
 
@@ -27,6 +25,7 @@ public class Task5 {
     }
 
     public static void fibonacii() {
+        int number;
         Scanner reader = new Scanner(System.in);
         System.out.format("Enter a number to view Fibonacci series: %n");
 
@@ -52,6 +51,7 @@ public class Task5 {
     }
 
     public static void factorial() {
+        int number;
         Scanner reader = new Scanner(System.in);
         System.out.format("%nPlease enter a positive number to view Factorial of it: %n");
 
@@ -72,6 +72,7 @@ public class Task5 {
     }
 
     public static void factorialOfOddNumbers() {
+        int number;
         Scanner reader = new Scanner(System.in);
         System.out.format("Please enter a positive number to view Factorial without even numbers in the sequence: %n");
         number = reader.nextInt();
@@ -106,7 +107,7 @@ public class Task5 {
 
     public static void numberOfDaysInMonth() {
         Scanner input = new Scanner(System.in);
-        int number_Of_DaysInMonth = 0;
+        int number_Of_DaysInMonth;
 
         System.out.format("Input a month number between 1 and 12: %n");
         int month = input.nextInt();
@@ -160,6 +161,5 @@ public class Task5 {
                 System.out.format("September has 30 days.%n");
                 break;
         }
-        System.out.format("This month of " + year + " has " + number_Of_DaysInMonth + " days.%n");
     }
 }
