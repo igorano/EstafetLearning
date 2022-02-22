@@ -15,6 +15,7 @@ public class Task6 {
         addValueInArray();
         bubbleSortExample();
     }
+
     static float[] floatArr;
 
     private static void intArray() {
@@ -107,37 +108,33 @@ public class Task6 {
     public static int[] addElement(int n, int[] arr, int x, int pos) {
         int[] newArray = new int[n + 1];
         for (int i = 0; i < n + 1; i++) {
-            if (i < pos - 1)
-                newArray[i] = arr[i];
-            else if (i == pos - 1)
-                newArray[i] = x;
-            else
-                newArray[i] = arr[i - 1];
+            if (i < pos - 1) newArray[i] = arr[i];
+            else if (i == pos - 1) newArray[i] = x;
+            else newArray[i] = arr[i - 1];
         }
         return newArray;
     }
 
-    private static void addValueInArray(){
+    private static void addValueInArray() {
         int n = 10;
         int x = 50;
 
-        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.println("\n------------------------");
         System.out.println("\nInitial Array:\n" + Arrays.toString(arr));
 
         arr = addElement(n, arr, x, 5);
-        System.out.println("\nArray with "+x+" added:\n"+Arrays.toString(arr));
+        System.out.println("\nArray with " + x + " added:\n" + Arrays.toString(arr));
         System.out.println("\n------------------------");
     }
 
-    private static void findDuplicateValuesOfArray(){
-        int[] arr = new int [] {5, 1, 2, 3, 4, 2, 7, 8, 8, 3, 5};
+    private static void findDuplicateValuesOfArray() {
+        int[] arr = new int[]{5, 1, 2, 3, 4, 2, 7, 8, 8, 3, 5};
         System.out.println("\n------------------------");
         System.out.println("\nDuplicate elements in the given array: ");
-        for(int i = 0; i < arr.length; i++) {
-            for(int j = i + 1; j < arr.length; j++) {
-                if(arr[i] == arr[j])
-                    System.out.println(arr[j]);
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) System.out.println(arr[j]);
             }
         }
     }
@@ -154,7 +151,7 @@ public class Task6 {
                 }
     }
 
-    private static void bubbleSortExample(){
+    private static void bubbleSortExample() {
         int[] unsortedArray = {-2, 45, 0, 11, -9, 3213, 4, -3, -4, 2, 20, 5, 100, -1};
 
         System.out.println("Unsorted Array ");
@@ -166,5 +163,4 @@ public class Task6 {
         System.out.println(Arrays.toString(unsortedArray));
         System.out.println("\n------------------------");
     }
-
 }
