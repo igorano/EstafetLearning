@@ -15,8 +15,10 @@ public class Task6 {
         addValueInArray();
         bubbleSortExample();
     }
+    static float[] floatArr;
 
     private static void intArray() {
+        floatArr = new float[10];
         int[] intArr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         System.out.println("\n------------------------");
