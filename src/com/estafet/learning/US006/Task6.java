@@ -1,7 +1,9 @@
 package com.estafet.learning.US006;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.stream.IntStream;
+import java.util.Set;
 
 public class Task6 {
     public static void main(String[] args) {
@@ -132,9 +134,11 @@ public class Task6 {
         int[] arr = new int[]{5, 1, 2, 3, 4, 2, 7, 8, 8, 3, 5};
         System.out.println("\n------------------------");
         System.out.println("\nDuplicate elements in the given array: ");
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[i] == arr[j]) System.out.println(arr[j]);
+
+        Set<Integer> integers = new HashSet<>();
+        for (int i : arr) {
+            if (!integers.add(i)) {
+                System.out.println("Duplicate element is :" + i);
             }
         }
     }
