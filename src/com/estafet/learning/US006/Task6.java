@@ -24,8 +24,8 @@ public class Task6 {
 
         System.out.println("\n------------------------");
         System.out.println("Array length is: " + intArr.length);
-        for (int i = 0; i <= 9; i++) {
-            System.out.print(intArr[i] + " ");
+        for (int j : intArr) {
+            System.out.print(j + " ");
         }
         int first = intArr[0];
         int last = intArr[intArr.length - 1];
@@ -57,8 +57,8 @@ public class Task6 {
 
         System.out.println("\n------------------------");
         System.out.println("Array length is: " + stringArr.length);
-        for (int i = 0; i <= 9; i++) {
-            System.out.print(stringArr[i] + " ");
+        for (String s : stringArr) {
+            System.out.print(s + " ");
         }
         String first = stringArr[0];
         String last = stringArr[stringArr.length - 1];
