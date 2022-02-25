@@ -1,4 +1,4 @@
-package com.estafet.learning.US007;
+package com.estafet.learning.US006_2;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Task7 {
+public class Task6_2 {
     public static void main(String[] args) {
         intArray();
         swapArrayElements();
