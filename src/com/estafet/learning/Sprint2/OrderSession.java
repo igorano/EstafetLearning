@@ -1,7 +1,5 @@
 package com.estafet.learning.Sprint2;
 
-import java.util.Scanner;
-
 public class OrderSession {
     static double numberOfPages;
     static double numberOFPagesLeft;
