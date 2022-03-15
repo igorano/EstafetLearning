@@ -1,13 +1,13 @@
 package com.estafet.learning.Sprint2;
 
 public class Order {
-    int year;
-    long amount;
-    double maxNumOfPages;
-    double numberOfPages;
-    double numberOfPagesLeft;
-    String employSignature;
-    boolean isEOrder;
+    private final int year;
+    private final long amount;
+    private final double maxNumOfPages;
+    private final double numberOfPages;
+    private final String employSignature;
+    private final boolean isEOrder;
+    private double numberOfPagesLeft;
 
     public Order(int year, long amount, double maxNumOfPages, double numberOfPages, double numberOfPagesLeft, String employSignature, boolean isEOrder) {
         this.year = year;
