@@ -8,9 +8,11 @@ public class OrderSession {
     public static void main(String[] args) {
         numberOfPages = 100;
         maxNumOfPages = 1000;
-        new Order(2021, 2000, maxNumOfPages, numberOfPages, usedPages(10), changeEmploySignature("old signature"), true);
+        Order order1 = new Order(2021, 2000, maxNumOfPages, numberOfPages, usedPages(10), changeEmploySignature("old signature"), true);
+        System.out.println(order1);
         System.out.println("---------------------------------");
-        new Order(2022, 3000, maxNumOfPages, numberOfPages, usedPages(95.5), changeEmploySignature("new signature"), false);
+        Order order2 = new Order(2022, 3000, maxNumOfPages, numberOfPages, usedPages(95.5), changeEmploySignature("new signature"), false);
+        System.out.println(order2);
     }
 
     private static String changeEmploySignature(String newEmploySignature) {
