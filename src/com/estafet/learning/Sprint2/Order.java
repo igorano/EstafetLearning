@@ -9,13 +9,13 @@ public class Order {
     String employSignature;
     boolean isEOrder;
 
-    public Order(int year, long amount, double maxNumOfPages, double numberOfPages, double numberOFPagesLeft, String employSignature, boolean isEOrder) {
+    public Order(int year, long amount, double maxNumOfPages, double numberOfPages, double numberOfPagesLeft, String employSignature, boolean isEOrder) {
         this.year = year;
         this.amount = amount;
         this.maxNumOfPages = maxNumOfPages;
         this.numberOfPages = numberOfPages;
-        this.numberOfPagesLeft = numberOFPagesLeft;
-        this.employSignature = employSignature;
+        this.numberOfPagesLeft = usedPages(numberOfPagesLeft);
+        this.employSignature = changeEmploySignature(employSignature);
         this.isEOrder = isEOrder;
     }
 
@@ -28,5 +28,17 @@ public class Order {
                 "Number of pages left is : " + numberOfPagesLeft + " " + "\n" +
                 "Employ signature is : " + employSignature + " " + "\n" +
                 "It is electronic order : " + isEOrder + " " + "\n";
+    }
+
+    private static String changeEmploySignature(String newEmploySignature) {
+        return newEmploySignature;
+    }
+
+    private double usedPages(double pages) {
+        numberOfPagesLeft = numberOfPages - pages;
+        if (pages >= numberOfPages) {
+            System.out.println("Please enter number of pages between 0 and 100.");
+        }
+        return numberOfPagesLeft;
     }
 }
