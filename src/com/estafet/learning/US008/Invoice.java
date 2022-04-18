@@ -9,7 +9,7 @@ public abstract class Invoice extends Order{
     public String ListWithArticles;
     public String TotalAmount;
 }
-class TradeInvoice extends Order {
+class TradeInvoice extends Invoice {
     TradeInvoice td = new TradeInvoice();
 
     @Override

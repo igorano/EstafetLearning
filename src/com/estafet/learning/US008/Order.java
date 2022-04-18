@@ -6,7 +6,7 @@ public abstract class Order {
     public String clientDetails;
     public String listWithArticles;
     public String totalAmount;
-    private static final int Invoice = 1;
+    private static final int invoice = 1;
     public static final String color = "green";
 
     public Order(){
