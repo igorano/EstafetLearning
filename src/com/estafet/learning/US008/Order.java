@@ -1,11 +1,11 @@
 package com.estafet.learning.US008;
 
 public abstract class Order {
-    public static final String ORDER_NAME = "ORR";
-    public String orderNumber;
-    public String clientDetails;
-    public String listWithArticles;
-    public String totalAmount;
+    private static final String ORDER_NAME = "ORR";
+    private String orderNumber;
+    private String clientDetails;
+    private String listWithArticles;
+    private String totalAmount;
     private static final int invoice = 1;
     public static final String color = "green";
 
