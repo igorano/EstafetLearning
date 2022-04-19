@@ -2,13 +2,14 @@ package com.estafet.learning.US008;
 
 import java.util.Objects;
 
-public abstract class Invoice extends Order{
+public abstract class Invoice extends Order {
     public static final String INVOICE_NAME = "INV";
-    public String OrderNumber;
-    public String ClientDetails;
-    public String ListWithArticles;
-    public String TotalAmount;
+    public String orderNumber;
+    public String clientDetails;
+    public String listWithArticles;
+    public String totalAmount;
 }
+
 class TradeInvoice extends Invoice {
     TradeInvoice td = new TradeInvoice();
 
