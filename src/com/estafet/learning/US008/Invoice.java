@@ -1,6 +1,6 @@
 package com.estafet.learning.US008;
 
-public abstract class Invoice extends Order {
+public abstract class Invoice {
     public static final String INVOICE_NAME = "INV";
     public String orderNumber;
     public String clientDetails;
