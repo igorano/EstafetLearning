@@ -9,7 +9,7 @@ public class TradeOrder extends Order {
 
     public void tradeOrder() {
         System.out.println(color);//prints color of Dog class
-        System.out.println(Order.color);//prints color of Animal class
+        System.out.println(super.color);//prints color of Animal class
         hashCode();
     }
 }
