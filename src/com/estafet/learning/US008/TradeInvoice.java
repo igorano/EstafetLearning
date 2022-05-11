@@ -4,6 +4,12 @@ import java.util.Objects;
 
 class TradeInvoice extends Invoice {
     TradeInvoice td = new TradeInvoice();
+    TradeInvoice td2 = new TradeInvoice();
+
+    public void compareObjects(){
+        System.out.println(td.equals(td2));
+    }
+
 
     @Override
     public boolean equals(Object o) {

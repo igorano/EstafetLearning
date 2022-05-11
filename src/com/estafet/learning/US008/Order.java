@@ -1,7 +1,7 @@
 package com.estafet.learning.US008;
 
 public abstract class Order {
-    private static final String ORDER_NAME = "ORR";
+    private final String ORDER_NAME = "ORR";
     private String orderNumber;
     private String clientDetails;
     private String listWithArticles;
