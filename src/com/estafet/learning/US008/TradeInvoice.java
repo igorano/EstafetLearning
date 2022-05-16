@@ -10,6 +10,9 @@ class TradeInvoice extends Invoice {
         System.out.println(td.equals(td2));
     }
 
+    public TradeInvoice() {
+        super();
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -23,4 +26,5 @@ class TradeInvoice extends Invoice {
     public int hashCode() {
         return Objects.hash(td);
     }
+    TradeInvoice order = (TradeInvoice) new Invoice();
 }

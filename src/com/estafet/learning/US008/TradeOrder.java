@@ -4,7 +4,10 @@ public class TradeOrder extends Order {
     final String color = "red";
 
     public TradeOrder() {
+        super();
+    }
 
+    public TradeOrder(String orderNumber, String clientDetails, String color) {
     }
 
     public void tradeOrder() {
