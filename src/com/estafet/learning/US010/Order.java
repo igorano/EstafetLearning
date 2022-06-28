@@ -2,7 +2,6 @@ package com.estafet.learning.US010;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 
 public class Order {
@@ -44,5 +43,18 @@ public class Order {
         citiesZipCodes.put("Pleven", 5800);
         System.out.println(citiesZipCodes);
 
+
+        List<String> orders = new ArrayList<>();
+        orders.add("A");
+        orders.add("B");
+        orders.add("C");
+
+        List<String> invoices = new ArrayList<>();
+        orders.add("invoices 1");
+        orders.add("invoices 2");
+        orders.add("invoices 3");
+        System.out.println(orders);
+        System.out.println("=====");
+        System.out.println(invoices);
     }
 }
